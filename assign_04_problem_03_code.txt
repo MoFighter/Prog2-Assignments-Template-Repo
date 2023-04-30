@@ -1,0 +1,35 @@
+import java.util.Scanner;
+//Mohamed Ahmed Omar 20206319
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read the value of N
+        System.out.print("Enter the value of N: ");
+        int N = sc.nextInt();
+
+        // Create an array of size N
+        int[] A = new int[N];
+
+        // Read N integers and store them in A
+        System.out.println("Enter " + N + " numbers:");
+        for (int i = 0; i < N; i++) {
+            A[i] = sc.nextInt();
+        }
+
+        // Read the value of X
+        System.out.print("Enter the value of X: ");
+        int X = sc.nextInt();
+
+        // Loop through the array and check if X exists
+        for (int i = 0; i < N; i++) {
+            if (A[i] == X) {
+                System.out.println(X + " exists in position " + i);
+                return;
+            }
+        }
+
+        // If X doesn't exist, print a message
+        System.out.println(X + " doesn't exist in the array");
+    }
+}
