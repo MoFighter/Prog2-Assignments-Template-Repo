@@ -1,0 +1,20 @@
+import java.util.Scanner;
+//Mohamed Ahmed Omar 20206319
+public class PUMGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int i = 1;
+        int count = 0;
+        while (count < n) {
+            System.out.print(i + " ");
+            i++;
+            System.out.print(i + " ");
+            i++;
+            System.out.print(i + " PUM\n");
+            i++;
+            count++;
+        }
+        scanner.close();
+    }
+}
