@@ -1,0 +1,21 @@
+import java.util.Scanner;
+//Mohamed Ahmed Omar 20206319
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input the number of rows
+        System.out.println("Enter number of rows: ");
+        int n = sc.nextInt();
+
+        // Iterate through each row and print the left-angled triangle
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
+}
