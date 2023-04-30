@@ -1,0 +1,18 @@
+import java.util.Scanner;
+//Mohamed Ahmed Omar 20206319
+public class SumOfOddNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number (X): ");
+        int x = sc.nextInt();
+        System.out.print("Enter the second number (Y): ");
+        int y = sc.nextInt();
+        int sum = 0;
+        for (int i = x + 1; i < y; i++) {
+            if (i % 2 != 0) {
+                sum += i;
+            }
+        }
+        System.out.println("Sum of odd numbers between " + x + " and " + y + " (excluding X and Y) is " + sum);
+    }
+}
